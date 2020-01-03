@@ -1,0 +1,16 @@
+server:
+  applicationConnectors:
+  - type : http
+    port : 9075
+  adminConnectors:
+  - type : http
+    port : 9076
+
+database:
+  driverClass: com.mysql.jdbc.Driver
+  user: root
+  password: 'root'
+  url: jdbc:mysql://localhost:3306/zepa_db
+  validationQuery: "/* MyService Health Check */ SELECT 1"
+
+
